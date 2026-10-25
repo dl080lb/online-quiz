@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資工系基礎知識小測驗</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; background: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 600px; background: white; margin: auto; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        .question { margin-top: 20px; margin-bottom: 10px; font-weight: bold; color: #444; }
+        .options label { display: block; margin: 8px 0; cursor: pointer; font-weight: normal; }
+        button { display: block; width: 100%; background: #2ea44f; color: white; border: none; padding: 12px; font-size: 16px; border-radius: 5px; cursor: pointer; margin-top: 25px; }
+        button:hover { background: #2c974b; }
+        #result { text-align: center; font-size: 20px; font-weight: bold; margin-top: 20px; color: #2ea44f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>資工系基礎知識小測驗</h1>
+    <form id="quizForm">
+        <!-- 第 1 題 -->
+        <div class="question">1. 在物件導向程式設計中，以下哪一個不是三大核心特徵之一？</div>
+        <div class="options">
+            <label><input type="radio" name="q1" value="wrong"> 封裝 (Encapsulation)</label>
+            <label><input type="radio" name="q1" value="wrong"> 繼承 (Inheritance)</label>
+            <label><input type="radio" name="q1" value="correct"> 編譯 (Compilation)</label>
+        </div>
+
+        <!-- 第 2 題 -->
+        <div class="question">2. 以下哪種資料結構採用「先進先出」（FIFO, First In First Out）的原則？</div>
+        <div class="options">
+            <label><input type="radio" name="q2" value="wrong"> 堆疊 (Stack)</label>
+            <label><input type="radio" name="q2" value="correct"> 佇列 (Queue)</label>
+            <label><input type="radio" name="q2" value="wrong"> 二元樹 (Binary Tree)</label>
+        </div>
+
+        <!-- 第 3 題 -->
+        <div class="question">3. 在標準的二元搜尋法（Binary Search）中，其時間複雜度（Time Complexity）為多少？</div>
+        <div class="options">
+            <label><input type="radio" name="q3" value="wrong"> O(n)</label>
+            <label><input type="radio" name="q3" value="correct"> O(log n)</label>
+            <label><input type="radio" name="q3" value="wrong"> O(n^2)</label>
+        </div>
+
+        <!-- 第 4 題 -->
+        <div class="question">4. 在 Git 版本控制中，哪一個指令是用來將遠端儲存庫的更新「下載並合併」到本地端？</div>
+        <div class="options">
+            <label><input type="radio" name="q4" value="correct"> git pull</label>
+            <label><input type="radio" name="q4" value="wrong"> git push</label>
+            <label><input type="radio" name="q4" value="wrong"> git commit</label>
+        </div>
+
+        <!-- 第 5 題 -->
+        <div class="question">5. 請問 HTML 主要是用來做什麼的？</div>
+        <div class="options">
+            <label><input type="radio" name="q5" value="wrong"> 定義網頁的樣式與排版</label>
+            <label><input type="radio" name="q5" value="correct"> 定義網頁的結構與內容</label>
+            <label><input type="radio" name="q5" value="wrong"> 處理網頁的伺服器資料庫邏輯</label>
+        </div>
+
+        <!-- 第 6 題 -->
+        <div class="question">6. 下列哪一個通訊協定通常用於安全的全球資訊網（網頁加密傳輸）？</div>
+        <div class="options">
+            <label><input type="radio" name="q6" value="wrong"> HTTP</label>
+            <label><input type="radio" name="q6" value="wrong"> FTP</label>
+            <label><input type="radio" name="q6" value="correct"> HTTPS</label>
+        </div>
+
+        <!-- 第 7 題 -->
+        <div class="question">7. 在資料結構中，若要尋找「後端有自我參照指標」的線性結構，通常指哪一種？</div>
+        <div class="options">
+            <label><input type="radio" name="q7" value="correct"> 鏈結串列 (Linked List)</label>
+            <label><input type="radio" name="q7" value="wrong"> 陣列 (Array)</label>
+            <label><input type="radio" name="q7" value="wrong"> 矩陣 (Matrix)</label>
+        </div>
+
+        <!-- 第 8 題 -->
+        <div class="question">8. 作業系統（Operating System）的主要功能不包含下列哪一項？</div>
+        <div class="options">
+            <label><input type="radio" name="q8" value="wrong"> 記憶體管理</label>
+            <label><input type="radio" name="q8" value="wrong"> 處理程序管理 (Process Management)</label>
+            <label><input type="radio" name="q8" value="correct"> 自動寫出商業企劃書</label>
+        </div>
+
+        <!-- 第 9 題 -->
+        <div class="question">9. 關聯式資料庫（Relational Database）中最常拿來查詢資料的標準語言是什麼？</div>
+        <div class="options">
+            <label><input type="radio" name="q9" value="correct"> SQL</label>
+            <label><input type="radio" name="q9" value="wrong"> Python</label>
+            <label><input type="radio" name="q9" value="wrong"> HTML</label>
+        </div>
+
+        <!-- 第 10 題 -->
+        <div class="question">10. 請問 1 Byte（位元組）等於多少個 Bits（位元）？</div>
+        <div class="options">
+            <label><input type="radio" name="q10" value="wrong"> 4 Bits</label>
+            <label><input type="radio" name="q10" value="correct"> 8 Bits</label>
+            <label><input type="radio" name="q10" value="wrong"> 16 Bits</label>
+        </div>
+
+        <button type="button" onclick="calculateScore()">送出答案</button>
+    </form>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateScore() {
+        let score = 0;
+        const total = 10;
+        for (let i = 1; i <= total; i++) {
+            const selected = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selected && selected.value === "correct") {
+                score++;
+            }
+        }
+        document.getElementById("result").innerText = `你的得分是：${score} / ${total} 分！`;
+    }
+</script>
+
+</body>
+</html>
